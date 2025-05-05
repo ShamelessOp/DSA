@@ -1,5 +1,5 @@
 class HashTableChaining:
-    def init(self, size):
+    def _init_(self, size):
         self.size = size
         self.table = [] # Initialize an empty list
         for _ in range(size):
@@ -40,7 +40,7 @@ class HashTableChaining:
         print(f"Total comparisons: {self.comparisons}")
 
 class HashTableLinearProbing:
-    def init(self, size):
+    def _init_(self, size):
         self.size = size
         self.table = [None] * size # Initialize an empty list for linear probing
         self.comparisons = 0 # Track comparisons
@@ -91,7 +91,7 @@ class HashTableLinearProbing:
         print(f"Total comparisons: {self.comparisons}")
 
 class TelephoneDirectory:
-    def init(self, size, method):
+    def _init_(self, size, method):
         self.size = size
         self.method = method
         if method == 'chaining':
