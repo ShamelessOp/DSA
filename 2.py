@@ -84,5 +84,5 @@ def user_input():
         else:
             print("Invalid choice! Please enter a valid option (1/2/3/4/5).")
 
-if _name_ == "_main_":
-    user_input()
+if __name__ == "__main__":
+    user_input()
